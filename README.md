@@ -13,6 +13,10 @@
 | `02_Model_evaluation_solution.ipynb` | Задание «Практика оценки модели» — диагностика качества трёх моделей кредитного скоринга: метрики, матрицы ошибок, ROC-AUC, поиск утечки данных и переобучения |
 | `README_01_pytorch_mlp.md` | Описание решения задания «Обучение нейросети» |
 | `README_02_model_evaluation.md` | Описание решения задания «Практика оценки модели» |
+| `03_ML_pipeline_solution.ipynb` | Задание «Практика pipeline» — `sklearn.pipeline.Pipeline` (кастомный трансформер → TF-IDF → классификатор), подбор гиперпараметров `GridSearchCV`, логирование всех экспериментов в MLflow, DAG оркестрации в Apache Airflow |
+| `README_03_ml_pipeline.md` | Описание решения задания «Практика pipeline» |
+| `airflow_dag.py` | DAG `ticket_classification_pipeline` для Apache Airflow (extract → validate → preprocess → train → evaluate → log_to_mlflow → register_model) |
+| `text_preprocessor.py` | Трансформер `TextPreprocessor` — общий модуль для ноутбука и DAG |
 
 ---
 
