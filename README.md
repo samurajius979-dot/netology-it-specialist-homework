@@ -17,6 +17,7 @@
 | `README_03_ml_pipeline.md` | Описание решения задания «Практика pipeline» |
 | `airflow_dag.py` | DAG `ticket_classification_pipeline` для Apache Airflow (extract → validate → preprocess → train → evaluate → log_to_mlflow → register_model) |
 | `text_preprocessor.py` | Трансформер `TextPreprocessor` — общий модуль для ноутбука и DAG |
+| `mlflow.db` | SQLite-хранилище MLflow с 4 залогированными экспериментами по заданию «Практика pipeline» (`mlflow ui --backend-store-uri sqlite:///mlflow.db`) |
 
 ---
 
